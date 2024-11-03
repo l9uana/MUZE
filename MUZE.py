@@ -137,4 +137,4 @@ async def 스킵(ctx):
     else:
         await ctx.send("M!138 [EXC138 - 재생 중인 곡이 없습니다.]") if DEBUG else await ctx.send("재생 중인 곡이 없습니다.")
 
-bot.run(TOKEN)
+bot.run(TOKEN)  # 섹스
