@@ -113,8 +113,8 @@ async def play_next_song(voice_client, ctx):
         queue.pop(0)
     else:
         await ctx.send("M!115 [대기열이 비어있습니다, 재생을 종료합니다.]") if DEBUG else await ctx.send("대기열이 비어있습니다, 재생을 종료합니다.")
-        await voice_client.disconnect()  # Disconnect only if there are no songs in the queue
-
+        await voice_client.disconnect()
+        
 @bot.command()
 async def 대기열(ctx):
     if queue:
